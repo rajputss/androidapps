@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.gatech.seclass.tccart">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="edu.gatech.seclass.tccart.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="edu.gatech.seclass.tccart.AddCustomer"
+            android:label="@string/title_activity_add_customer"
+            android:parentActivityName="edu.gatech.seclass.tccart.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.tccart.MainActivity" />
+        </activity>
+        <activity
+            android:name="edu.gatech.seclass.tccart.RunCreditCard"
+            android:label="@string/title_activity_run_credit_card"
+            android:parentActivityName="edu.gatech.seclass.tccart.AddCustomer" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.tccart.AddCustomer" />
+        </activity>
+        <activity
+            android:name="edu.gatech.seclass.tccart.ViewCustomers"
+            android:label="@string/title_activity_view_customers"
+            android:parentActivityName="edu.gatech.seclass.tccart.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.tccart.MainActivity" />
+        </activity>
+        <activity
+            android:name="edu.gatech.seclass.tccart.EditCustomer"
+            android:label="@string/title_activity_edit_customer"
+            android:parentActivityName="edu.gatech.seclass.tccart.ViewCustomers" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.tccart.ViewCustomers" />
+        </activity>
+        <activity
+            android:name="edu.gatech.seclass.tccart.ViewCustomerTransactions"
+            android:label="@string/title_activity_view_customer_transactions"
+            android:parentActivityName="edu.gatech.seclass.tccart.ViewCustomers" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.tccart.ViewCustomers" />
+        </activity>
+        <activity
+            android:name="edu.gatech.seclass.tccart.TransactionSummary"
+            android:label="@string/title_transaction_summary"
+            android:parentActivityName="edu.gatech.seclass.tccart.ViewCustomers" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.tccart.ViewCustomers" />
+        </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

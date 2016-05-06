@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    tools:context="edu.gatech.seclass.tccart.MainActivity">
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etEmail"
+        android:layout_alignRight="@+id/etEmail"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="21dp"
+        android:onClick="addCustomer"
+        android:text="Add Customer" />
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:layout_marginTop="62dp"
+        android:layout_below="@+id/tvMsg"
+        android:layout_centerHorizontal="true">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/etFirstName"
+        android:layout_alignStart="@+id/etFirstName">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="email@email.com"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/etLastName"
+        android:layout_alignLeft="@+id/etLastName"
+        android:layout_alignStart="@+id/etLastName"
+        android:layout_marginTop="66dp" />
+
+
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:minEms="14"
+        android:text="Please Enter Customer Information"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/tvMsg2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvMsg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:minEms="14"
+        android:text="Welcome to TCCart Management System!"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
